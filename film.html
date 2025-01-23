@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <!-- icon link -->
+    <link rel="icon" href="./public/Pic/icon/Icon.ico" />
+    <title>
+      فیلم سینمایی | 9700 عنوان از جدید ترین فیلم های ایرانی و خارجی
+    </title>
+    <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+  <body class="bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+    <div class="wrapper bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+      <!--start header -->
+      <div class="header">
+        <a href="./index.html" class="logo">
+          <img src="./public/Pic/logo-filimo.png" alt="" class="main--logo" />
+        </a>
+        <span class="line">|</span>
+        <div class="menu">
+          <a href="./filimotorz.html" class="filimotorz">
+            <span>
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <g id="ui-icon-fire" viewBox="0 0 20 20">
+                    <path
+                      d="M14.9817 9.29572C14.7793 9.03171 14.5329 8.8029 14.3041 8.57409C13.7145 8.04606 13.0456 7.66764 12.4824 7.11321C11.486 6.13683 11.079 4.67766 11.3079 3.31885C11.3932 2.81244 10.953 2.3161 10.5056 2.56826C10.1542 2.76632 9.82751 2.99853 9.52546 3.24102C7.24615 5.07151 6.3485 8.30127 7.42216 11.0734C7.45736 11.1614 7.49256 11.2494 7.49256 11.3638C7.49256 11.5574 7.36055 11.7334 7.18455 11.8039C6.98214 11.8919 6.77092 11.8391 6.60372 11.6982C6.55091 11.6542 6.51571 11.6102 6.48051 11.5486C6.02925 10.9776 5.75014 10.2942 5.64237 9.58309C5.54699 8.9538 4.70017 8.51622 4.43263 9.09373C3.98868 10.052 3.77785 11.1298 3.84038 12.1735C3.89318 12.6135 3.94598 13.0535 4.09559 13.4935C4.2188 14.0216 4.45641 14.5496 4.72042 15.016C5.67087 16.5385 7.31655 17.6297 9.08544 17.8498C10.9687 18.0874 12.984 17.7442 14.4273 16.4417C16.0378 14.9808 16.601 12.6399 15.7738 10.6334L15.6594 10.4046C15.4746 9.99976 14.9817 9.29572 14.9817 9.29572ZM12.2008 14.84C11.9544 15.0512 11.5496 15.28 11.2327 15.368C10.5182 15.6232 9.80358 15.4344 9.24326 15.0899C8.97628 14.9257 9.0751 14.5425 9.34969 14.3914C9.99764 14.0349 10.3962 13.4412 10.5375 12.8423C10.6871 12.1383 10.4055 11.5574 10.2911 10.8798C10.2373 10.5481 10.2155 10.2415 10.2384 9.94018C10.2647 9.59462 10.6858 9.56464 10.8834 9.84938C10.9196 9.90155 10.9568 9.95182 10.9951 9.99976C11.6728 10.8798 12.7376 11.267 12.9664 12.4639C13.0016 12.5871 13.0192 12.7103 13.0192 12.8423C13.0456 13.5639 12.7288 14.356 12.2008 14.84Z"
+                      fill="url(#paint0_radial_923_68543)"
+                    ></path>
+                    <defs>
+                      <radialGradient
+                        id="paint0_radial_923_68543"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(13 21.5005) rotate(-115.942) scale(20.573 28.2969)"
+                      >
+                        <stop stop-color="#F58540"></stop>
+                        <stop offset="0.541667" stop-color="#F99F3E"></stop>
+                        <stop offset="1" stop-color="#FEC23B"></stop>
+                      </radialGradient>
+                    </defs>
+                  </g>
+                </defs>
+                <g>
+                  <path
+                    d="M14.9817 9.29572C14.7793 9.03171 14.5329 8.8029 14.3041 8.57409C13.7145 8.04606 13.0456 7.66764 12.4824 7.11321C11.486 6.13683 11.079 4.67766 11.3079 3.31885C11.3932 2.81244 10.953 2.3161 10.5056 2.56826C10.1542 2.76632 9.82751 2.99853 9.52546 3.24102C7.24615 5.07151 6.3485 8.30127 7.42216 11.0734C7.45736 11.1614 7.49256 11.2494 7.49256 11.3638C7.49256 11.5574 7.36055 11.7334 7.18455 11.8039C6.98214 11.8919 6.77092 11.8391 6.60372 11.6982C6.55091 11.6542 6.51571 11.6102 6.48051 11.5486C6.02925 10.9776 5.75014 10.2942 5.64237 9.58309C5.54699 8.9538 4.70017 8.51622 4.43263 9.09373C3.98868 10.052 3.77785 11.1298 3.84038 12.1735C3.89318 12.6135 3.94598 13.0535 4.09559 13.4935C4.2188 14.0216 4.45641 14.5496 4.72042 15.016C5.67087 16.5385 7.31655 17.6297 9.08544 17.8498C10.9687 18.0874 12.984 17.7442 14.4273 16.4417C16.0378 14.9808 16.601 12.6399 15.7738 10.6334L15.6594 10.4046C15.4746 9.99976 14.9817 9.29572 14.9817 9.29572ZM12.2008 14.84C11.9544 15.0512 11.5496 15.28 11.2327 15.368C10.5182 15.6232 9.80358 15.4344 9.24326 15.0899C8.97628 14.9257 9.0751 14.5425 9.34969 14.3914C9.99764 14.0349 10.3962 13.4412 10.5375 12.8423C10.6871 12.1383 10.4055 11.5574 10.2911 10.8798C10.2373 10.5481 10.2155 10.2415 10.2384 9.94018C10.2647 9.59462 10.6858 9.56464 10.8834 9.84938C10.9196 9.90155 10.9568 9.95182 10.9951 9.99976C11.6728 10.8798 12.7376 11.267 12.9664 12.4639C13.0016 12.5871 13.0192 12.7103 13.0192 12.8423C13.0456 13.5639 12.7288 14.356 12.2008 14.84Z"
+                    fill="url(#paint0_radial_923_68543)"
+                  ></path>
+                  <defs>
+                    <radialgradient
+                      id="paint0_radial_923_68543"
+                      cx="0"
+                      cy="0"
+                      r="1"
+                      gradientunits="userSpaceOnUse"
+                      gradienttransform="translate(13 21.5005) rotate(-115.942) scale(20.573 28.2969)"
+                    >
+                      <stop stop-color="#F58540"></stop>
+                      <stop offset="0.541667" stop-color="#F99F3E"></stop>
+                      <stop offset="1" stop-color="#FEC23B"></stop>
+                    </radialgradient>
+                  </defs>
+                </g>
+              </svg>
+            </span>
+            فیلیموتورز
+          </a>
+          <a href="./film.html" class="filimoschool"> فیلم</a>
+          <a href="./seryal.html" class="filimoschool"> سریال</a>
+        </div>
+        <div class="btn-header">
+          <a href="./eshterak.html" class="eshterak"> خرید اشتراک</a>
+          <a href="./signup.html" class="vorod"> ورود</a>
+        </div>
+      </div>
+      <!--end header -->
+
+      <!--start irani -->
+      <div class="khafan mt-[70px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+        <div class="title__khafan bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <a href="#" class="main__title">فیلم ایرانی</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="main__khafan gap-[20px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <div class="khafan__img mb-[30px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+            <img src="./public/Pic/Film/irani/01.jpg" alt="" />
+            <p>مفت بر</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/irani/02.jpg" alt="" />
+            <p>نسخه سینمایی زخم کاری</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/irani/03.jpg" alt="" />
+            <p>پریا</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/irani/04.jpg" alt="" />
+            <p>نذر بی بی</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/irani/07.jpg" alt="" />
+            <p>تمساح خونی</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/irani/06.jpg" alt="" />
+            <p>مستند ددپول</p>
+            <div class="cover__khafan"></div>
+          </div>
+        </div>
+      </div>
+      <!--end irani -->
+
+      <!--start porfrosh irani -->
+      <div class="khafan mt-[70px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+        <div class="title__khafan bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <a href="#" class="main__title">پرفروش های سینمای ایران</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="main__khafan gap-[20px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <div class="khafan__img mb-[30px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+            <img src="./public/Pic/Film/porfrosh/01.jpg" alt="" />
+            <p>شهر هرت</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/porfrosh/02.jpg" alt="" />
+            <p>مغزهای کوچک زنگ زده</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/porfrosh/03.jpg" alt="" />
+            <p>من سالوادور نیستم</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/porfrosh/04.jpg" alt="" />
+            <p>ملاقات خصوصی</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/porfrosh/05.jpg" alt="" />
+            <p>غریب</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/porfrosh/06.jpg" alt="" />
+            <p>چپ ، راست</p>
+            <div class="cover__khafan"></div>
+          </div>
+        </div>
+      </div>
+      <!--end porfrosh irani -->
+
+      <!--start doble -->
+      <div class="khafan mt-[70px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+        <div class="title__khafan bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <a href="#" class="main__title">دوبله اختصاصی</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="main__khafan gap-[20px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <div class="khafan__img mb-[30px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+            <img src="./public/Pic/Film/doble/06.jpg" alt="" />
+            <p>تمام آنچه نور میپنداریم</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/doble/01.jpg" alt="" />
+            <p>نامیرا</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/doble/02.jpg" alt="" />
+            <p>شماره 24</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/doble/03.jpg" alt="" />
+            <p>تا پای جان</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/doble/04.jpg" alt="" />
+            <p>باگیرا</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/doble/05.jpg" alt="" />
+            <p>سونیک خارپشت 3</p>
+            <div class="cover__khafan"></div>
+          </div>
+        </div>
+      </div>
+      <!--end doble -->
+      <!--start oscar -->
+      <div class="khafan mt-[70px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+        <div class="title__khafan bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <a href="#" class="main__title">برندگان اسکار بهترین فیلم</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="main__khafan gap-[20px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <div class="khafan__img mb-[30px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+            <img src="./public/Pic/Film/oscar/01.jpg" alt="" />
+            <p>در جبهه غرب خبری نیست</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/oscar/02.jpg" alt="" />
+            <p>آنی هال</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/oscar/03.jpg" alt="" />
+            <p>مردم معمولی</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/oscar/04.jpg" alt="" />
+            <p>مردی برای تمام فصول</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/oscar/05.jpg" alt="" />
+            <p>آپارتمان</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/oscar/06.jpg" alt="" />
+            <p>کابوی نیمه شب</p>
+            <div class="cover__khafan"></div>
+          </div>
+        </div>
+      </div>
+      <!--end oscar -->
+      <!--start majarajoei -->
+      <div class="khafan mt-[70px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+        <div class="title__khafan bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <a href="#" class="main__title">ماجراجویی</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="main__khafan gap-[20px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <div class="khafan__img mb-[30px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+            <img src="./public/Pic/Film/majarajoei/01.jpg" alt="" />
+            <p>ارباب حلقه ها 3</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/majarajoei/02.jpg" alt="" />
+            <p>هابیت</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/majarajoei/03.jpg" alt="" />
+            <p>مگ 2</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/majarajoei/04.jpg" alt="" />
+            <p>به نام پادشاه</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/majarajoei/05.jpg" alt="" />
+            <p>هاوایی</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/majarajoei/06.jpg" alt="" />
+            <p>ارباب حلقه ها 1</p>
+            <div class="cover__khafan"></div>
+          </div>
+        </div>
+      </div>
+      <!--end majarajoei -->
+      <!--start action -->
+      <div class="khafan mt-[70px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+        <div class="title__khafan bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <a href="#" class="main__title">اکشن</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="main__khafan gap-[20px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <div class="khafan__img mb-[30px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+            <img src="./public/Pic/Film/action/01.jpg" alt="" />
+            <p>عملیات فورچن</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/action/02.jpg" alt="" />
+            <p>پارکر</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/action/03.jpg" alt="" />
+            <p>تگراس 3</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/action/04.jpg" alt="" />
+            <p>تمساح خونی</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/action/05.jpg" alt="" />
+            <p>سریع و خشن 10</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/action/06.jpg" alt="" />
+            <p>ارباب حلقه ها 2</p>
+            <div class="cover__khafan"></div>
+          </div>
+        </div>
+      </div>
+      <!--end action -->
+      <!--start comedy -->
+      <div class="khafan mt-[70px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+        <div class="title__khafan bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <a href="#" class="main__title">کمدی</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="main__khafan gap-[20px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <div class="khafan__img mb-[30px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+            <img src="./public/Pic/Film/comedy/01.jpg" alt="" />
+            <p>نهنگ عنیر</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/comedy/02.jpg" alt="" />
+            <p>دینامیت</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/comedy/03.jpg" alt="" />
+            <p>تگزاس 2</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/comedy/04.jpg" alt="" />
+            <p>اکسیدان</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/comedy/05.jpg" alt="" />
+            <p>هولیا</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/comedy/06.jpg" alt="" />
+            <p>بخارست</p>
+            <div class="cover__khafan"></div>
+          </div>
+        </div>
+      </div>
+      <!--end comedy -->
+      <!--start jenaei -->
+      <div class="khafan mt-[70px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+        <div class="title__khafan bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <a href="#" class="main__title">جنایی</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="main__khafan gap-[20px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+          <div class="khafan__img mb-[30px] bg-[#1b1b1b] dark:bg-[#f1f1f1]">
+            <img src="./public/Pic/Film/jenaei/01.jpg" alt="" />
+            <p>علف زار</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/jenaei/02.jpg" alt="" />
+            <p>برگ برنده</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/jenaei/03.jpg" alt="" />
+            <p>هزارتو</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/jenaei/04.jpg" alt="" />
+            <p>قاتل فراری</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/jenaei/05.jpg" alt="" />
+            <p>مکانیک</p>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img mb-[30px]">
+            <img src="./public/Pic/Film/jenaei/06.jpg" alt="" />
+            <p>متری شیش و نیم</p>
+            <div class="cover__khafan"></div>
+          </div>
+        </div>
+      </div>
+      <!--end jenaei -->
+
+      <!-- darknood -->
+      <div
+        class="darkmoodbott flex justify-start items-center z-[100000] bg-black dark:bg-white"
+      >
+        <button
+          id="theme-toggle"
+          type="button"
+          class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5"
+        >
+          <svg
+            id="theme-toggle-light-icon"
+            class="hidden w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4
+
+ 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            id="theme-toggle-dark-icon"
+            class="hidden w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <script>
+        var themeToggleDarkIcon = document.getElementById(
+          "theme-toggle-dark-icon"
+        );
+        var themeToggleLightIcon = document.getElementById(
+          "theme-toggle-light-icon"
+        );
+
+        // Change the icons inside the button based on previous settings
+        if (
+          localStorage.getItem("color-theme") === "dark" ||
+          (!("color-theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          themeToggleLightIcon.classList.remove("hidden");
+        } else {
+          themeToggleDarkIcon.classList.remove("hidden");
+        }
+
+        var themeToggleBtn = document.getElementById("theme-toggle");
+
+        themeToggleBtn.addEventListener("click", function () {
+          // Toggle icons inside button
+          themeToggleDarkIcon.classList.toggle("hidden");
+          themeToggleLightIcon.classList.toggle("hidden");
+
+          // If set via local storage previously
+          if (localStorage.getItem("color-theme")) {
+            if (localStorage.getItem("color-theme") === "light") {
+              document.documentElement.classList.add("dark");
+              localStorage.setItem("color-theme", "dark");
+            } else {
+              document.documentElement.classList.remove("dark");
+              localStorage.setItem("color-theme", "light");
+            }
+
+            // If NOT set via local storage previously
+          } else {
+            if (document.documentElement.classList.contains("dark")) {
+              document.documentElement.classList.remove("dark");
+              localStorage.setItem("color-theme", "light");
+            } else {
+              document.documentElement.classList.add("dark");
+              localStorage.setItem("color-theme", "dark");
+            }
+          }
+        });
+      </script>
+      <!-- darknood -->
+      <!-- footer -->
+      <div class="footer z-[99999] shadow-lg dark:shadow-xl">
+        <a href="#">تماشا با تلوزیون</a>
+        <a href="#">قوانین</a>
+        <a href="#">اپلیکیشن ها</a>
+        <a href="#">تماس و پشتیبانی</a>
+        <a href="#">فروشگاه</a>
+        <a href="#">سایر لینک ها</a>
+      </div>
+      <!-- end footer  -->
+    </div>
+  </body>
+</html>

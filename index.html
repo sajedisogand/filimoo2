@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>تماشای آنلاین فیلم و سریال | فیلیمو</title>
+    <!-- link--css -->
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <!-- icon link -->
+    <link rel="icon" href="./public/Pic/icon/Icon.ico" />
+    <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+  <body>
+    <!--start website -->
+    <div class="wrapper">
+      <!--start header -->
+      <div class="header">
+        <a href="#" class="logo">
+          <img src="./public/Pic/logo-filimo.png" alt="" class="main--logo" />
+        </a>
+        <span class="line">|</span>
+        <div class="menu">
+          <a href="filimotorz.html" class="filimotorz">
+            <span>
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <g id="ui-icon-fire" viewBox="0 0 20 20">
+                    <path
+                      d="M14.9817 9.29572C14.7793 9.03171 14.5329 8.8029 14.3041 8.57409C13.7145 8.04606 13.0456 7.66764 12.4824 7.11321C11.486 6.13683 11.079 4.67766 11.3079 3.31885C11.3932 2.81244 10.953 2.3161 10.5056 2.56826C10.1542 2.76632 9.82751 2.99853 9.52546 3.24102C7.24615 5.07151 6.3485 8.30127 7.42216 11.0734C7.45736 11.1614 7.49256 11.2494 7.49256 11.3638C7.49256 11.5574 7.36055 11.7334 7.18455 11.8039C6.98214 11.8919 6.77092 11.8391 6.60372 11.6982C6.55091 11.6542 6.51571 11.6102 6.48051 11.5486C6.02925 10.9776 5.75014 10.2942 5.64237 9.58309C5.54699 8.9538 4.70017 8.51622 4.43263 9.09373C3.98868 10.052 3.77785 11.1298 3.84038 12.1735C3.89318 12.6135 3.94598 13.0535 4.09559 13.4935C4.2188 14.0216 4.45641 14.5496 4.72042 15.016C5.67087 16.5385 7.31655 17.6297 9.08544 17.8498C10.9687 18.0874 12.984 17.7442 14.4273 16.4417C16.0378 14.9808 16.601 12.6399 15.7738 10.6334L15.6594 10.4046C15.4746 9.99976 14.9817 9.29572 14.9817 9.29572ZM12.2008 14.84C11.9544 15.0512 11.5496 15.28 11.2327 15.368C10.5182 15.6232 9.80358 15.4344 9.24326 15.0899C8.97628 14.9257 9.0751 14.5425 9.34969 14.3914C9.99764 14.0349 10.3962 13.4412 10.5375 12.8423C10.6871 12.1383 10.4055 11.5574 10.2911 10.8798C10.2373 10.5481 10.2155 10.2415 10.2384 9.94018C10.2647 9.59462 10.6858 9.56464 10.8834 9.84938C10.9196 9.90155 10.9568 9.95182 10.9951 9.99976C11.6728 10.8798 12.7376 11.267 12.9664 12.4639C13.0016 12.5871 13.0192 12.7103 13.0192 12.8423C13.0456 13.5639 12.7288 14.356 12.2008 14.84Z"
+                      fill="url(#paint0_radial_923_68543)"
+                    ></path>
+                    <defs>
+                      <radialGradient
+                        id="paint0_radial_923_68543"
+                        cx="0"
+                        cy="0"
+                        r="1"
+                        gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(13 21.5005) rotate(-115.942) scale(20.573 28.2969)"
+                      >
+                        <stop stop-color="#F58540"></stop>
+                        <stop offset="0.541667" stop-color="#F99F3E"></stop>
+                        <stop offset="1" stop-color="#FEC23B"></stop>
+                      </radialGradient>
+                    </defs>
+                  </g>
+                </defs>
+                <g>
+                  <path
+                    d="M14.9817 9.29572C14.7793 9.03171 14.5329 8.8029 14.3041 8.57409C13.7145 8.04606 13.0456 7.66764 12.4824 7.11321C11.486 6.13683 11.079 4.67766 11.3079 3.31885C11.3932 2.81244 10.953 2.3161 10.5056 2.56826C10.1542 2.76632 9.82751 2.99853 9.52546 3.24102C7.24615 5.07151 6.3485 8.30127 7.42216 11.0734C7.45736 11.1614 7.49256 11.2494 7.49256 11.3638C7.49256 11.5574 7.36055 11.7334 7.18455 11.8039C6.98214 11.8919 6.77092 11.8391 6.60372 11.6982C6.55091 11.6542 6.51571 11.6102 6.48051 11.5486C6.02925 10.9776 5.75014 10.2942 5.64237 9.58309C5.54699 8.9538 4.70017 8.51622 4.43263 9.09373C3.98868 10.052 3.77785 11.1298 3.84038 12.1735C3.89318 12.6135 3.94598 13.0535 4.09559 13.4935C4.2188 14.0216 4.45641 14.5496 4.72042 15.016C5.67087 16.5385 7.31655 17.6297 9.08544 17.8498C10.9687 18.0874 12.984 17.7442 14.4273 16.4417C16.0378 14.9808 16.601 12.6399 15.7738 10.6334L15.6594 10.4046C15.4746 9.99976 14.9817 9.29572 14.9817 9.29572ZM12.2008 14.84C11.9544 15.0512 11.5496 15.28 11.2327 15.368C10.5182 15.6232 9.80358 15.4344 9.24326 15.0899C8.97628 14.9257 9.0751 14.5425 9.34969 14.3914C9.99764 14.0349 10.3962 13.4412 10.5375 12.8423C10.6871 12.1383 10.4055 11.5574 10.2911 10.8798C10.2373 10.5481 10.2155 10.2415 10.2384 9.94018C10.2647 9.59462 10.6858 9.56464 10.8834 9.84938C10.9196 9.90155 10.9568 9.95182 10.9951 9.99976C11.6728 10.8798 12.7376 11.267 12.9664 12.4639C13.0016 12.5871 13.0192 12.7103 13.0192 12.8423C13.0456 13.5639 12.7288 14.356 12.2008 14.84Z"
+                    fill="url(#paint0_radial_923_68543)"
+                  ></path>
+                  <defs>
+                    <radialgradient
+                      id="paint0_radial_923_68543"
+                      cx="0"
+                      cy="0"
+                      r="1"
+                      gradientunits="userSpaceOnUse"
+                      gradienttransform="translate(13 21.5005) rotate(-115.942) scale(20.573 28.2969)"
+                    >
+                      <stop stop-color="#F58540"></stop>
+                      <stop offset="0.541667" stop-color="#F99F3E"></stop>
+                      <stop offset="1" stop-color="#FEC23B"></stop>
+                    </radialgradient>
+                  </defs>
+                </g>
+              </svg>
+            </span>
+            فیلیموتورز
+          </a>
+          <a href="./film.html" class="filimoschool"> فیلم</a>
+          <a href="./seryal.html" class="filimoschool"> سریال</a>
+        </div>
+        <div class="btn-header">
+          <a href="./eshterak.html" class="eshterak"> خرید اشتراک</a>
+          <a href="./signup.html" class="vorod"> ورود</a>
+        </div>
+      </div>
+      <!--start header -->
+
+      <!-- start banner -->
+      <div class="banner">
+        <div class="text-banner">
+          <p class="text-[#F9A83D]">با فیلیمو بی وقفه فیلم ببین</p>
+          <h1 class="text-white text-[30px] font-bold">
+            کنترل همیشه دست توست!
+          </h1>
+          <div class="banner-text-discription">
+            <p>98 هزار اپیزود فیلم و سریال برای تماشا داری</p>
+            <p>میتونی دانلود کنی بعد بدون اینترنت تماشا کنی</p>
+            <p>میتونی یک عضو، مخصوص تماشای کودک بسازی</p>
+          </div>
+          <a href="./eshterak.html" class="banner-eshterak">
+            <span>
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <g id="ui-icon-subscription" viewBox="0 0 24 24">
+                    <path
+                      d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                    ></path>
+                    <path
+                      d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                    ></path>
+                    <circle cx="16" cy="9" r="1"></circle>
+                    <circle cx="16" cy="15" r="1"></circle>
+                    <circle cx="16" cy="12" r="1"></circle>
+                  </g>
+                </defs>
+                <g>
+                  <path
+                    d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                  ></path>
+                  <path
+                    d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                  ></path>
+                  <circle cx="16" cy="9" r="1"></circle>
+                  <circle cx="16" cy="15" r="1"></circle>
+                  <circle cx="16" cy="12" r="1"></circle>
+                </g>
+              </svg>
+            </span>
+            خرید اشتراک و تماشا</a
+          >
+        </div>
+      </div>
+      <!-- end banner -->
+
+      <!--start favorite filimo -->
+      <div class="favorite-filimo">
+        <div class="favorite-title">
+          <p>محبوب ترین های فیلیمو</p>
+        </div>
+        <div class="favorite-items">
+          <a href="#" class="favorite-item-1 property"></a>
+          <a href="#" class="favorite-item-2 property"></a>
+          <a href="#" class="favorite-item-3 property"></a>
+          <a href="#" class="favorite-item-4 property"></a>
+          <a href="#" class="favorite-item-5 property"></a>
+          <a href="#" class="favorite-item-6 property"></a>
+        </div>
+      </div>
+      <!--end favorite filimo -->
+
+      <!--start offer -->
+      <div class="offer">
+        <div class="offer-pic"></div>
+        <div class="offer-disc">
+          <p class="text-white text-[13px] mb-[20px]">زخم کاری: مجازات</p>
+          <p class="text-gray-400 text-[11px]">کارگردان: محمدحسین مهدویان</p>
+          <div class="offer-janr">
+            <p>درام</p>
+            <p>رازآلود</p>
+          </div>
+          <p class="text-[11px] text-white">
+            سیما می پذیرد تا به هادی کمک کند. او مخفیانه به دنبال سرنخی از سمیرا
+            در ماجرای شب عروسی است. اما این مالک است که به ...
+          </p>
+        </div>
+        <div class="offer-logo"></div>
+      </div>
+      <!--end offer -->
+
+      <!-- start all device -->
+      <div class="all-device">
+        <div class="right-alldevice"></div>
+        <div class="left-alldevice">
+          <p class="text-[15px] text-white font-bold dark:text-black">
+            تماشای فیلیمو با همه دستگاه ها
+          </p>
+          <p class="text-gray-400 text-[11px] dark:text-[#2b2b2b]">
+            می‌توانید فیلیمو را به صورت هم‌زمان روی 3 دستگاه مختلف مثل موبایل،
+            تبلت، لپ‌تاپ، تلویزیون و... تماشا کنید.
+          </p>
+          <div class="device">
+            <div class="device-text">
+              <p>کامپیوتر و لپ‌تاپ</p>
+              <h3>windows PC - MacOS - Chorom OS</h3>
+            </div>
+          </div>
+          <div class="device">
+            <div class="device-text">
+              <p>موبایل و تبلت</p>
+              <h3>
+                Android Phone & Tablets - Iphone and Ipad - Amazon Fire Tablets
+              </h3>
+            </div>
+          </div>
+          <div class="device">
+            <div class="device-text">
+              <p>کنسول‌های بازی (Browser)</p>
+              <h3>Xbox Series S - Xbox Seris X - PS5 - PS4</h3>
+            </div>
+          </div>
+          <a href="./eshterak.html" class="eshterak-3">
+            <span class="fill-white">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <g id="ui-icon-subscription" viewBox="0 0 24 24">
+                    <path
+                      d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                    ></path>
+                    <path
+                      d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                    ></path>
+                    <circle cx="16" cy="9" r="1"></circle>
+                    <circle cx="16" cy="15" r="1"></circle>
+                    <circle cx="16" cy="12" r="1"></circle>
+                  </g>
+                </defs>
+                <g>
+                  <path
+                    d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                  ></path>
+                  <path
+                    d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                  ></path>
+                  <circle cx="16" cy="9" r="1"></circle>
+                  <circle cx="16" cy="15" r="1"></circle>
+                  <circle cx="16" cy="12" r="1"></circle>
+                </g>
+              </svg>
+            </span>
+            <p>خرید اشتراک و تماشا</p>
+          </a>
+        </div>
+      </div>
+      <!-- end all device -->
+
+      <!-- start learn watch -->
+      <div class="learnwatch">
+        <div class="learnwatch-right">
+          <p class="font-bold text-[15px]">
+            چطور با تلویزیون، فیلیمو تماشا کنم؟
+          </p>
+          <p class="text-[10px] text-justify text-gray-400">
+            ما برای راحتی شما و تماشای فیلیمو روی تلویزیون‌های مختلف 6 روش را
+            فراهم کردیم. هرکدام از این 6 روش یک ویدیو آموزشی دارند که می‌توانید
+            از لینک زیر، آن‌ها را تماشا کنید و روشی که با تلویزیون شما سازگار
+            است را انتخاب کنید.
+          </p>
+          <div class="learn-device">
+            <h3>تلویزیون</h3>
+            <p>
+              Amazon Fire TV - LG TVs - Chrome Cast - Apple TV - Android TV
+              devices - Samsung
+            </p>
+          </div>
+          <div class="learn-device">
+            <h3>اندروید تی‌وی</h3>
+            <p>
+              NVIDIA - amazon - xiaomi - minix - skystream - turewell - ematic -
+              humax - matricom
+            </p>
+          </div>
+          <a href="#" class="learn-TV-more">
+            <p>ویدیو های آموزشی تماشا با تلوزیون</p>
+            <span class="fill-white">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g>
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div class="learnwatch-left"></div>
+      </div>
+      <!-- end learn watch -->
+      <!-- start free watch -->
+      <div class="free-watch">
+        <div class="freewatch-title">
+          <p>محتواهای رایگان</p>
+        </div>
+        <div class="freewatch-items">
+          <a href="#" class="item-img-1 item-img"></a>
+          <a href="#" class="item-img-2 item-img"></a>
+          <a href="#" class="item-img-3 item-img"></a>
+          <a href="#" class="item-img-4 item-img"></a>
+          <a href="#" class="item-img-5 item-img"></a>
+          <a href="#" class="item-img-6 item-img"></a>
+        </div>
+      </div>
+      <!-- end free watch -->
+
+      <!-- start cartoon -->
+      <div class="cartoon">
+        <div class="cartoon-right"></div>
+        <div class="cartoon-left">
+          <h3 class="text-white dark:text-black">
+            دنیایی متنوع از فیلم و کارتون‌های کودکانه
+          </h3>
+          <p class="text-justify text-[10px] text-gray-400 dark:text-[#12343f]">
+            ساخت فیلیمو کودک این امکان را می‌دهد که با انتخاب سن فرزندتان، یک
+            فضای امن برای تماشای کودک بسازید؛ یعنی محتوای مخصوص سن خودش را ببیند
+            و به بقیه فیلم و سریال‌ها دسترسی نداشته‌باشد.
+          </p>
+          <div class="cartoon-left-butt">
+            <a href="#" class="butt-left">فیلیمو کودک بساز</a>
+            <a href="#" class="butt-left">تماشای فیلیمو کودک</a>
+          </div>
+        </div>
+      </div>
+      <!-- end cartoon -->
+
+      <!-- start ekran -->
+      <div class="ekran">
+        <div class="ekran-title">
+          <p class="dark:text-black">سینما آنلاین فیلیمو</p>
+        </div>
+        <div class="ekran-discr">
+          <p>فیلم‌های روز سینمای ایران</p>
+          <p>۸ ساعت زمان برای مشاهده فیلم در هر کجا</p>
+          <p>خرید یک بلیت برای تماشا همراه با همه خانواده</p>
+        </div>
+        <div class="ekran-items">
+          <div class="item-ekran-film">
+            <a href="#" class="ekran-pic-1"> </a>
+            <div class="item-ekran-discr">
+              <a href="#" class="text-white text-[11px] dark:text-[#3b3b3b]"
+                >پول و پارتی</a
+              >
+              <p class="text-gray-400 text-[10px] dark:text-black">
+                کارگردان: سعید سهیلی
+              </p>
+              <div class="ekran-janr">
+                <p>کمدی</p>
+                <p>عاشقانه</p>
+              </div>
+              <a href="#" class="buy-tiket">خرید بلیت</a>
+            </div>
+          </div>
+          <div class="item-ekran-film">
+            <a href="#" class="ekran-pic-2"> </a>
+            <div class="item-ekran-discr">
+              <a href="#" class="text-white text-[11px] dark:text-[#3b3b3b]"
+                >مفت بر</a
+              >
+              <p class="text-gray-400 text-[10px] dark:text-black">
+                کارگردان: عادل تبریزی
+              </p>
+              <div class="ekran-janr">
+                <p>کمدی</p>
+              </div>
+              <a href="#" class="buy-tiket">خرید بلیت</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end ekran -->
+
+      <!-- start filimo ad -->
+      <div class="filimo-ad">
+        <div class="filimo-logo-ad"></div>
+        <div class="filimo-discr-ad">
+          <p>هزاران فیلم و سریال خارجی (دوبله و زیرنویس)</p>
+          <p>هزاران انیمیشن و کارتون برای کودکان</p>
+          <p>پشتیبانی 24 ساعته برای راهنمایی شما</p>
+        </div>
+        <a href="./eshterak.html" class="eshtrak-ad">
+          <span class="fill-white">
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <defs>
+                <g id="ui-icon-subscription" viewBox="0 0 24 24">
+                  <path
+                    d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                  ></path>
+                  <path
+                    d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                  ></path>
+                  <circle cx="16" cy="9" r="1"></circle>
+                  <circle cx="16" cy="15" r="1"></circle>
+                  <circle cx="16" cy="12" r="1"></circle>
+                </g>
+              </defs>
+              <g>
+                <path
+                  d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                ></path>
+                <path
+                  d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                ></path>
+                <circle cx="16" cy="9" r="1"></circle>
+                <circle cx="16" cy="15" r="1"></circle>
+                <circle cx="16" cy="12" r="1"></circle>
+              </g>
+            </svg>
+          </span>
+          <p>خرید اشتراک و تماشا</p>
+        </a>
+      </div>
+      <!-- end filimo ad -->
+    </div>
+    <!-- darknood -->
+    <div
+      class="darkmoodbott flex justify-start items-center z-[100000] bg-black dark:bg-white"
+    >
+      <button
+        id="theme-toggle"
+        type="button"
+        class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5"
+      >
+        <svg
+          id="theme-toggle-light-icon"
+          class="hidden w-5 h-5"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4
+
+ 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        <svg
+          id="theme-toggle-dark-icon"
+          class="hidden w-5 h-5"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <script>
+      var themeToggleDarkIcon = document.getElementById(
+        "theme-toggle-dark-icon"
+      );
+      var themeToggleLightIcon = document.getElementById(
+        "theme-toggle-light-icon"
+      );
+
+      // Change the icons inside the button based on previous settings
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        themeToggleLightIcon.classList.remove("hidden");
+      } else {
+        themeToggleDarkIcon.classList.remove("hidden");
+      }
+
+      var themeToggleBtn = document.getElementById("theme-toggle");
+
+      themeToggleBtn.addEventListener("click", function () {
+        // Toggle icons inside button
+        themeToggleDarkIcon.classList.toggle("hidden");
+        themeToggleLightIcon.classList.toggle("hidden");
+
+        // If set via local storage previously
+        if (localStorage.getItem("color-theme")) {
+          if (localStorage.getItem("color-theme") === "light") {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("color-theme", "dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("color-theme", "light");
+          }
+
+          // If NOT set via local storage previously
+        } else {
+          if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("color-theme", "light");
+          } else {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("color-theme", "dark");
+          }
+        }
+      });
+    </script>
+    <!-- darknood -->
+    <!-- footer -->
+    <div class="footer z-[99999]">
+      <a href="#">تماشا با تلوزیون</a>
+      <a href="#">قوانین</a>
+      <a href="#">اپلیکیشن ها</a>
+      <a href="#">تماس و پشتیبانی</a>
+      <a href="#">فروشگاه</a>
+      <a href="#">سایر لینک ها</a>
+    </div>
+    <!-- end footer  -->
+
+    <!--end website -->
+  </body>
+</html>

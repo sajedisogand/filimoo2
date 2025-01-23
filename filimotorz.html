@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <!-- icon link -->
+     <link rel="Icon" href="./public/Pic/icon/Icon.ico">
+    <title>فیلیموتورز</title>
+     <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+  <body class="bg-[#2b2b2b] dark:bg-white">
+    <div class="wrapper-filimotorz bg-black">
+      <!-- menu -->
+      <div class="menu2">
+        <a href="./index.html" class="image">
+          <img src="./public/Pic/logo-filimo.png" alt="" class="main--logo" />
+        </a>
+        <nav class="main__menu">
+          <div class="menu__item">
+            <a href="./film.html">فیلم</a>
+            <div class="submenu">
+              <div class="sub__item"><a href="#">انیمیشن</a></div>
+              <div class="sub__item"><a href="#">وحشت</a></div>
+              <div class="sub__item"><a href="#">هیجان انگیز</a></div>
+              <div class="sub__item"><a href="#">علمی تخیلی</a></div>
+              <div class="sub__item"><a href="#">ماجراجویی</a></div>
+              <div class="sub__item"><a href="#">جنایی</a></div>
+              <div class="sub__item"><a href="#">رازآلود</a></div>
+              <div class="sub__item"><a href="#">مستند</a></div>
+              <div class="sub__item"><a href="#">تاریخی</a></div>
+              <div class="sub__item"><a href="#">بیوگرافی</a></div>
+              <div class="sub__item"><a href="#">کمدی</a></div>
+              <div class="sub__item"><a href="#">اکشن</a></div>
+              <div class="sub__item"><a href="#">جنگی</a></div>
+              <div class="sub__item"><a href="#">عاشقانه</a></div>
+              <div class="sub__item"><a href="#">خانوادگی</a></div>
+              <div class="sub__item"><a href="#">فانتزی</a></div>
+              <div class="sub__item"><a href="#">وسترن</a></div>
+              <div class="sub__item"><a href="#">درام</a></div>
+              <div class="sub__item"><a href="#">ورزشی</a></div>
+            </div>
+          </div>
+          <div class="menu__item">
+            <a href="./seryal.html">سریال</a>
+            <div class="submenu">
+              <div class="sub__item"><a href="#">کمدی</a></div>
+              <div class="sub__item"><a href="#">ریالیتی شو</a></div>
+              <div class="sub__item"><a href="#">عاشقانه</a></div>
+              <div class="sub__item"><a href="#">اکشن</a></div>
+              <div class="sub__item"><a href="#">مستند</a></div>
+              <div class="sub__item"><a href="#">تاریخی</a></div>
+              <div class="sub__item"><a href="#">هیجان انگیز</a></div>
+              <div class="sub__item"><a href="#">رازآلود</a></div>
+              <div class="sub__item"><a href="#">ماجراجویی</a></div>
+              <div class="sub__item"><a href="#">فانتزی</a></div>
+              <div class="sub__item"><a href="#">انیمیشن</a></div>
+              <div class="sub__item"><a href="#">خانوادگی</a></div>
+              <div class="sub__item"><a href="#">وحشت</a></div>
+              <div class="sub__item"><a href="#">جنگی</a></div>
+              <div class="sub__item"><a href="#">جنایی</a></div>
+              <div class="sub__item"><a href="#">علمی تحیلی</a></div>
+              <div class="sub__item"><a href="#">درام</a></div>
+              <div class="sub__item"><a href="#">تاک شو</a></div>
+              <div class="sub__item"><a href="#">گیم شو</a></div>
+            </div>
+          </div>
+          <div class="menu__item">
+            <a href="#">ایرانی</a>
+          </div>
+          <div class="menu__item">
+            <a href="#">خارجی</a>
+          </div>
+          <div class="menu__item">
+            <a href="#">مجموعه ها</a>
+            <div class="submenu">
+              <div class="sub__item"><a href="#">فیلم ها ایمان صفا</a></div>
+              <div class="sub__item">
+                <a href="#">فیلم های رعنا آزادی ور</a>
+              </div>
+              <div class="sub__item">
+                <a href="#">فیلم های غلامرضا نیکخواه</a>
+              </div>
+              <div class="sub__item"><a href="#">فیلم های هانیه توسلی</a></div>
+              <div class="sub__item"><a href="#">فیلم های جواد عزتی</a></div>
+              <div class="sub__item"><a href="#">فیلم های سحر قریشی</a></div>
+              <div class="sub__item">
+                <a href="#">فیلم های مهران غفوریان</a>
+              </div>
+              <div class="sub__item">
+                <a href="#">فیلم های پریناز ایزدیار</a>
+              </div>
+              <div class="sub__item"><a href="#">فیلم های شهاب حسینی</a></div>
+              <div class="sub__item"><a href="#">همه لیست</a></div>
+              <div class="sub__item"><a href="#">بر اساس داستان واقعی</a></div>
+              <div class="sub__item"><a href="#">پایان غیر منتظره</a></div>
+              <div class="sub__item"><a href="#">هوش مصنوعی</a></div>
+              <div class="sub__item"><a href="#">هنرهای رزمی</a></div>
+              <div class="sub__item"><a href="#">بر اساس زمان</a></div>
+              <div class="sub__item"><a href="#">قاتل سریالی</a></div>
+              <div class="sub__item"><a href="#">سفر در زمان</a></div>
+              <div class="sub__item"><a href="#">پایان جهان</a></div>
+              <div class="sub__item"><a href="#">ابرقهرمان</a></div>
+            </div>
+          </div>
+        </nav>
+        <div class="sign__up">
+          <a href="./eshterak.html" class="btn__eshtrak">خرید اشتراک</a>
+          <a href="./signup.html" class="btn__signup">ورود</a>
+        </div>
+      </div>
+      <!--end menu -->
+      <!-- slider -->
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="./public/Pic/Slider/01.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./public/Pic/Slider/02.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./public/Pic/Slider/03.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./public/Pic/Slider/04.jpeg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./public/Pic/Slider/05.jpeg" alt="" />
+          </div>
+        </div>
+        <button class="next">
+          <svg
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <defs>
+              <g id="ui-icon-arrow_forward_ios" viewBox="0 0 24 24">
+                <path
+                  d="M8 20.5a1 1 0 0 1-.73-.32 1 1 0 0 1 .05-1.41L14.54 12 7.32 5.23A1 1 0 0 1 8.68 3.77l8 7.5a1 1 0 0 1 0 1.46l-8 7.5A1 1 0 0 1 8 20.5Z"
+                ></path>
+              </g>
+            </defs>
+            <g fill="#FFFFFF">
+              <path
+                d="M8 20.5a1 1 0 0 1-.73-.32 1 1 0 0 1 .05-1.41L14.54 12 7.32 5.23A1 1 0 0 1 8.68 3.77l8 7.5a1 1 0 0 1 0 1.46l-8 7.5A1 1 0 0 1 8 20.5Z"
+              ></path>
+            </g>
+          </svg>
+        </button>
+        <button class="prev">
+          <svg
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <defs>
+              <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                <path
+                  d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                ></path>
+              </g>
+            </defs>
+            <g fill="#FFFFFF">
+              <path
+                d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+              ></path>
+            </g>
+          </svg>
+        </button>
+        <div class="pagination"></div>
+      </div>
+      <!-- end slider -->
+      <!-- filter -->
+      <div class="filter">
+        <div class="filter__item">
+          <p>فیلم و سریال</p>
+          <span>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="15"
+              height="15"
+            >
+              <defs>
+                <g id="ui-icon-arrow_down_ios" viewBox="0 0 24 24">
+                  <path
+                    d="M12 17a1 1 0 0 1-.73-.32l-7.5-8A1 1 0 1 1 5.23 7.32L12 14.54l6.77-7.22a1 1 0 1 1 1.46 1.36l-7.5 8A1 1 0 0 1 12 17Z"
+                  ></path>
+                </g>
+              </defs>
+              <g fill="#FFFFFF">
+                <path
+                  d="M12 17a1 1 0 0 1-.73-.32l-7.5-8A1 1 0 1 1 5.23 7.32L12 14.54l6.77-7.22a1 1 0 1 1 1.46 1.36l-7.5 8A1 1 0 0 1 12 17Z"
+                ></path>
+              </g>
+            </svg>
+          </span>
+          <div class="submenu__filter">
+            <a href="#"> همه</a>
+            <a href="#"> فیلم</a>
+            <a href="#"> سریال</a>
+          </div>
+        </div>
+        <div class="filter__item">
+          <p>ژانر</p>
+          <span>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="15"
+              height="15"
+            >
+              <defs>
+                <g id="ui-icon-arrow_down_ios" viewBox="0 0 24 24">
+                  <path
+                    d="M12 17a1 1 0 0 1-.73-.32l-7.5-8A1 1 0 1 1 5.23 7.32L12 14.54l6.77-7.22a1 1 0 1 1 1.46 1.36l-7.5 8A1 1 0 0 1 12 17Z"
+                  ></path>
+                </g>
+              </defs>
+              <g fill="#FFFFFF">
+                <path
+                  d="M12 17a1 1 0 0 1-.73-.32l-7.5-8A1 1 0 1 1 5.23 7.32L12 14.54l6.77-7.22a1 1 0 1 1 1.46 1.36l-7.5 8A1 1 0 0 1 12 17Z"
+                ></path>
+              </g>
+            </svg>
+          </span>
+          <div class="submenu__filter">
+            <a href="#"> همه</a>
+            <a href="#"> انگلیس</a>
+            <a href="#">چین</a>
+            <a href="#">ایران</a>
+            <a href="#"> کره جنوبی</a>
+            <a href="#">کانادا</a>
+            <a href="#"> ایتالیا</a>
+            <a href="#"> آمریکا</a>
+          </div>
+        </div>
+        <div class="filter__item">
+          <p>کشور</p>
+          <span>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="15"
+              height="15"
+            >
+              <defs>
+                <g id="ui-icon-arrow_down_ios" viewBox="0 0 24 24">
+                  <path
+                    d="M12 17a1 1 0 0 1-.73-.32l-7.5-8A1 1 0 1 1 5.23 7.32L12 14.54l6.77-7.22a1 1 0 1 1 1.46 1.36l-7.5 8A1 1 0 0 1 12 17Z"
+                  ></path>
+                </g>
+              </defs>
+              <g fill="#FFFFFF">
+                <path
+                  d="M12 17a1 1 0 0 1-.73-.32l-7.5-8A1 1 0 1 1 5.23 7.32L12 14.54l6.77-7.22a1 1 0 1 1 1.46 1.36l-7.5 8A1 1 0 0 1 12 17Z"
+                ></path>
+              </g>
+            </svg>
+          </span>
+          <div class="submenu__filter">
+            <a href="#"> همه</a>
+            <a href="#"> کمدی</a>
+            <a href="#"> تاک شو</a>
+            <a href="#">جنایی</a>
+            <a href="#"> ماجراجویی</a>
+            <a href="#"> ریالیتی شو</a>
+            <a href="#"> وسترن</a>
+            <a href="#"> خانوادگی</a>
+            <a href="#"> ورزشی</a>
+            <a href="#"> بیوگرافی</a>
+            <a href="#"> مستند</a>
+            <a href="#"> موسیقی</a>
+            <a href="#"> تئاتر</a>
+          </div>
+        </div>
+        <div class="filter__item">
+          <p>زبان</p>
+          <span>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="15"
+              height="15"
+            >
+              <defs>
+                <g id="ui-icon-arrow_down_ios" viewBox="0 0 24 24">
+                  <path
+                    d="M12 17a1 1 0 0 1-.73-.32l-7.5-8A1 1 0 1 1 5.23 7.32L12 14.54l6.77-7.22a1 1 0 1 1 1.46 1.36l-7.5 8A1 1 0 0 1 12 17Z"
+                  ></path>
+                </g>
+              </defs>
+              <g fill="#FFFFFF">
+                <path
+                  d="M12 17a1 1 0 0 1-.73-.32l-7.5-8A1 1 0 1 1 5.23 7.32L12 14.54l6.77-7.22a1 1 0 1 1 1.46 1.36l-7.5 8A1 1 0 0 1 12 17Z"
+                ></path>
+              </g>
+            </svg>
+          </span>
+          <div class="submenu__filter">
+            <a href="#"> همه</a>
+            <a href="#"> فارسی (دوبله)</a>
+            <a href="#">زبان اصلی (زیرنویس)</a>
+          </div>
+        </div>
+        <div class="filter__item">
+          <p>سن</p>
+          <span>
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="15"
+              height="15"
+            >
+              <defs>
+                <g id="ui-icon-arrow_down_ios" viewBox="0 0 24 24">
+                  <path
+                    d="M12 17a1 1 0 0 1-.73-.32l-7.5-8A1 1 0 1 1 5.23 7.32L12 14.54l6.77-7.22a1 1 0 1 1 1.46 1.36l-7.5 8A1 1 0 0 1 12 17Z"
+                  ></path>
+                </g>
+              </defs>
+              <g fill="#FFFFFF">
+                <path
+                  d="M12 17a1 1 0 0 1-.73-.32l-7.5-8A1 1 0 1 1 5.23 7.32L12 14.54l6.77-7.22a1 1 0 1 1 1.46 1.36l-7.5 8A1 1 0 0 1 12 17Z"
+                ></path>
+              </g>
+            </svg>
+          </span>
+          <div class="submenu__filter">
+            <a href="#"> همه</a>
+            <a href="#">زیر 3 سال</a>
+            <a href="#">تا 12 سال</a>
+            <a href="#">تا 15 سال</a>
+            <a href="#">تا 18 سال</a>
+          </div>
+        </div>
+        <button class="filter__ok">اعمال فیلتر</button>
+      </div>
+      <!--end filter -->
+      <!-- special -->
+      <div class="special">
+        <div class="special__title">
+          <a href="#" class="main__title">ویژه</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="special__main">
+          <div class="special__products">
+            <div class="img__special">
+              <img src="./public/Pic/Special/01.jpeg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/10.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/03.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/04.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/05.jpg" alt="" />
+              <span>اکران آنلاین</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/06.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/07.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/08.jpg" alt="" />
+              <span>اکران آنلاین</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/09.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/11.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/12.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/13.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/14.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/15.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/16.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/17.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/18.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/19.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/20.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/21.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/22.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/23.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/24.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+            <div class="img__special">
+              <img src="./public/Pic/Special/25.jpg" alt="" />
+              <span>رایگان ایرانسلی</span>
+              <div class="cover"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end special -->
+      <!-- khafan -->
+      <div class="khafan">
+        <div class="title__khafan">
+          <a href="#" class="main__title">خفن ترین ها</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="main__khafan">
+          <div class="khafan__img">
+            <img src="./public/Pic/Khafan/01.jpg" alt="" />
+            <p>تمساح خونی</p>
+            <span>اکران آنلاین</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/Khafan/02.jpg" alt="" />
+            <p>گریز</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/Khafan/03.jpg" alt="" />
+            <p>حلقه های قدرت</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/Khafan/04.jpg" alt="" />
+            <p>گرگ ها بیرون می آیند</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/Khafan/05.jpg" alt="" />
+            <p>تحویل دادن</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/Khafan/07.jpg" alt="" />
+            <p>گردباد</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+        </div>
+      </div>
+      <!--end khafan -->
+      <!-- new -->
+      <div class="khafan">
+        <div class="title__khafan">
+          <a href="#" class="main__title">تازه ها</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="main__khafan">
+          <div class="khafan__img">
+            <img src="./public/Pic/taze/01.jpg" alt="" />
+            <p>بعدی کیست؟</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/taze/02.jpg" alt="" />
+            <p>خدایان گرگ و میش</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/taze/03.jpg" alt="" />
+            <p>آگاتا تمام مدت</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/taze/04.jpg" alt="" />
+            <p>ملکه وو</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/taze/05.jpg" alt="" />
+            <p>سگ های جنگی</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/taze/08.jpg" alt="" />
+            <p>چاندو قهرمان</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+        </div>
+      </div>
+      <!--end new -->
+      <!-- hot -->
+      <div class="khafan">
+        <div class="title__khafan">
+          <a href="#" class="main__title">داغ ترین ها</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="main__khafan">
+          <div class="khafan__img">
+            <img src="./public/Pic/hot/08.jpg" alt="" />
+            <p>حلقه های قدرت</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/hot/02.jpg" alt="" />
+            <p>مینیون</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/hot/03.jpg" alt="" />
+            <p>تمساح خونی</p>
+            <span>اکران آنلاین</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/hot/04.jpg" alt="" />
+            <p>هاوایی</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/hot/05.jpg" alt="" />
+            <p>گل یا پوچ</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/hot/07.jpg" alt="" />
+            <p>فسیل/p> <span>اکران آنلاین</span></p>
+
+            <div class="cover__khafan"></div>
+          </div>
+        </div>
+      </div>
+      <!--end hot -->
+      <!-- mahbob -->
+      <div class="khafan">
+        <div class="title__khafan">
+          <a href="#" class="main__title">محبوب ترین ها</a>
+          <a href="#" class="watch__more"
+            >مشاهده همه
+            <span
+              ><svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+              >
+                <defs>
+                  <g id="ui-icon-arrow_back_ios" viewBox="0 0 24 24">
+                    <path
+                      d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                    ></path>
+                  </g>
+                </defs>
+                <g fill="#EDB50F">
+                  <path
+                    d="M16 20.5a1 1 0 0 1-.68-.27l-8-7.5a1 1 0 0 1 0-1.46l8-7.5a1 1 0 1 1 1.36 1.46L9.46 12l7.22 6.77a1 1 0 0 1 .05 1.41A1 1 0 0 1 16 20.5Z"
+                  ></path>
+                </g></svg></span
+          ></a>
+        </div>
+        <div class="main__khafan h-[400px]">
+          <div class="khafan__img">
+            <img src="./public/Pic/favorite/01.jpg" alt="" />
+            <p>زخم کاری</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/favorite/02.jpg" alt="" />
+            <p>هم اکنون</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/favorite/03.jpg" alt="" />
+            <p>دال</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/favorite/04.jpg" alt="" />
+            <p>جوکر</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/favorite/05.jpg" alt="" />
+            <p>شام ایرانی</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+          <div class="khafan__img">
+            <img src="./public/Pic/favorite/06.jpg" alt="" />
+            <p>کاست</p>
+            <span>ایرانسلی رایگان</span>
+            <div class="cover__khafan"></div>
+          </div>
+        </div>
+      </div>
+      <!--end mahbob -->
+    </div>
+    <!-- darknood -->
+    <div
+      class="darkmoodbott flex justify-start items-center z-[100000] bg-black dark:bg-white"
+    >
+      <button
+        id="theme-toggle"
+        type="button"
+        class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5"
+      >
+        <svg
+          id="theme-toggle-light-icon"
+          class="hidden w-5 h-5"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4
+
+ 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        <svg
+          id="theme-toggle-dark-icon"
+          class="hidden w-5 h-5"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <script>
+      var themeToggleDarkIcon = document.getElementById(
+        "theme-toggle-dark-icon"
+      );
+      var themeToggleLightIcon = document.getElementById(
+        "theme-toggle-light-icon"
+      );
+
+      // Change the icons inside the button based on previous settings
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        themeToggleLightIcon.classList.remove("hidden");
+      } else {
+        themeToggleDarkIcon.classList.remove("hidden");
+      }
+
+      var themeToggleBtn = document.getElementById("theme-toggle");
+
+      themeToggleBtn.addEventListener("click", function () {
+        // Toggle icons inside button
+        themeToggleDarkIcon.classList.toggle("hidden");
+        themeToggleLightIcon.classList.toggle("hidden");
+
+        // If set via local storage previously
+        if (localStorage.getItem("color-theme")) {
+          if (localStorage.getItem("color-theme") === "light") {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("color-theme", "dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("color-theme", "light");
+          }
+
+          // If NOT set via local storage previously
+        } else {
+          if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("color-theme", "light");
+          } else {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("color-theme", "dark");
+          }
+        }
+      });
+    </script>
+    <!-- darknood -->
+
+    <!-- footer -->
+    <div class="footer z-[99999]">
+      <a href="#">تماشا با تلوزیون</a>
+      <a href="#">قوانین</a>
+      <a href="#">اپلیکیشن ها</a>
+      <a href="#">تماس و پشتیبانی</a>
+      <a href="#">فروشگاه</a>
+      <a href="#">سایر لینک ها</a>
+    </div>
+    <!-- end footer  -->
+
+    <script src="./public/js/main.js"></script>
+  </body>
+</html>
