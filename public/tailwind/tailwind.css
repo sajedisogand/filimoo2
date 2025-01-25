@@ -60,7 +60,7 @@
 }
 @layer components {
   .banner {
-    @apply w-full desktop:h-[350px] Mobile:h-[100vh]  bg-[url('/public/pic/banner/02.jpg')] bg-cover bg-center relative;
+    @apply w-full desktop:h-[350px] Mobile:h-[100vh]  bg-[url('/pic/banner/02.jpg')] bg-cover bg-center relative;
   }
   .text-banner {
     @apply flex flex-col flex-wrap  gap-y-[20px] w-full   justify-center items-center absolute bottom-[20px];
