@@ -14,10 +14,10 @@
 @layer base {
   @font-face {
     font-family: "filimo";
-    src: url(/Fonts/IRANSans-Medium.eot);
-    src: url(/Fonts/IRANSans-Medium.ttf);
-    src: url(/Fonts/IRANSans-Medium.woff);
-    src: url(/Fonts/IRANSans-Medium.woff2);
+    src: url(../public/Fonts/IRANSans-Medium.eot);
+    src: url(../public/Fonts/IRANSans-Medium.ttf);
+    src: url(../public//Fonts/IRANSans-Medium.woff);
+    src: url(../public/Fonts/IRANSans-Medium.woff2);
   }
 }
 @layer components {
